@@ -1,0 +1,85 @@
+<!DOCTYPE html><!-- powered by BookScroll http://djmcloud.danieljmckeown/bookscroll/ v0.6.0 copyright 2015 by Dan McKeown http://danmckeown.info -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{BookTitle}}</title>
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/bookscroll.css">
+</head>
+<body>
+
+	<div id="sidenavigation" class="leftnav">
+		<ul id="slide-out" class="side-nav fixed">
+			<a href="#{{bookTitle}}"><li><i>{{bookTitle}}</i></li></a>
+			<li></li>
+				  <li><a href="#{{Chapter1}}">{{Chapter1}}</a></li>
+            <li><a href="#{{SectionA}}">{{SectionA}}</a></li>
+          {{moreChapters}}
+    	</ul><!-- #slide-out -->
+    		<a href="#" data-activates="slide-out" class="button-collapse"><i class="large mdi-navigation-menu"></i></a>
+	</div><!-- .leftnav -->
+
+<div id="megacontainer" class="fullcontent">
+	<div id="booktext" class="row mainarea"> 
+	<div id="bookcolumn" class="col s11 m12 l9 offset-l1">
+		<header>
+			<h1><a name="{{bookTitle}}" href="#{{bookTitle}}">{{bookTitle}}</a></h1>
+		</header>
+		<main>
+			<div class="row" id="authorcard">
+        		<div class="none">
+          			<div class="card blue-grey lighten-1">
+            			<div class="card-content white-text">
+              				<p><h5>by <a href="{{authorURI}}">{{authorName}}</a></h5><h8> for <a href="{{bookPublisherURI}}">{{bookPublisherName}}</a></h8></p>
+            			</div><!-- .card-content -->
+             			<div class="card-action">
+             			 	<a href="{{link1URI}}">{{link1name}}</a>
+           				    <a href="{{link1URI}}">{{link1name}}</a>
+            			</div>
+                    </div>
+        		</div>
+    		</div>
+
+		<div class="illustration" id="image1">
+			<img src="images/16676562701_104a69602e_o.jpg" alt="illustration" />
+		</div><!-- #image1 -->
+
+<div class="book content-area" id="bookContent">
+<h2><a name="{{Chapter1}}" href="#{{Chapter1}}">{{Chapter1}}</a></h2>
+<p>
+{{chapter1text}}
+</p>
+<h4><a name="{{SectionA}}" href="#{{SectionA}}">{{sectionA}}</a></h4>
+<p>
+{{sectionAtext}}
+</p>
+{{moreBookContent}}
+</div><!-- #retirement-planning-like-a-dinosaur -->
+		</main>
+    </div><!-- .bookcolumn -->
+  	</div><!-- .booktext -->
+
+	<div id="portagethefooter">
+	  <footer id="colophon" class="site-footer" role="contentinfo">
+	    <div class="card-content grey darken-2 white-text">
+	    <center>
+	      <a class="grey-text text-lighten-3" href="{{bookURI}}">{{bookTitle}}</a> 
+	      copyright {{bookYear}} by <a href="{{authorURL}}"><font style="color:white">{{authorName}}</font></a> | powered by <a class="grey-text text-lighten-3" href="http://djmcloud.danieljmckeown.com/bookscroll/">BookScroll</a> </center>
+	    </div><!-- .site-info -->
+	  </footer><!-- #colophon -->
+	</div><!-- portagethefooter -->
+
+  	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/materialize.js"></script>
+
+  	<script>
+   	// Initialize collapse button
+ 		$(".button-collapse").sideNav();
+  	// Initialize collapsible (uncomment the line below if you use the dropdown variation)
+  	// $('.collapsible').collapsible();
+  	</script>
+
+</div><!-- .fullcontent -->
+
+</body>
+</html>
