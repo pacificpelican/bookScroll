@@ -1,4 +1,4 @@
-<!DOCTYPE html><!-- powered by BookScroll http://djmcloud.danieljmckeown/bookscroll/ v0.6.1 copyright 2015 by Dan McKeown http://danmckeown.info -->
+<!DOCTYPE html><!-- powered by BookScroll {{brackets}} template http://djmcloud.danieljmckeown/bookscroll/ v0.6.1 copyright 2015 by Dan McKeown http://danmckeown.info -->
 <html>
 <head>
   <meta charset="utf-8">
@@ -15,6 +15,7 @@
 				  <li><a href="#{{Chapter1}}">{{Chapter1}}</a></li>
             <li><a href="#{{SectionA}}">{{SectionA}}</a></li>
             <li> {{moreChapters}} </li>
+            {{yetMoreChapters}}
     	</ul><!-- #slide-out -->
     		<a href="#" data-activates="slide-out" class="button-collapse"><i class="large mdi-navigation-menu"></i></a>
 	</div><!-- .leftnav -->
@@ -41,7 +42,7 @@
     		</div>
 
 		<div class="illustration" id="image1">
-			<img src="images/16676562701_104a69602e_o.jpg" alt="illustration" />
+			<img src="{{bookImage}}" alt="illustration" />
 		</div><!-- #image1 -->
 
 <div class="book content-area" id="bookContent">
@@ -53,8 +54,11 @@
 <p>
 {{sectionAtext}}
 </p>
+<p>
 {{moreBookContent}}
-</div><!-- # -->
+</p>
+{{yetMoreBookContent}}
+</div><!-- #-->
 		</main>
     </div><!-- .bookcolumn -->
   	</div><!-- .booktext -->
