@@ -12,3 +12,9 @@ March 4, 2015
 -added to readme.md including links to this file
 -put {{moreChapters}} inside an li tag in the menu
 -added templates directory and the {{brackets}} template
+
+v0.6.2
+March 5, 2015
+-eliminated templates directory in this project:
+	the {{brackets}} template is being forked for use in the new Book Brackets project:
+		http://djmcloud.danieljmckeown.com/bookbrackets/
