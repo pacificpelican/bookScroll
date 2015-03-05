@@ -18,3 +18,7 @@ March 5, 2015
 -eliminated templates directory in this project:
 	the {{brackets}} template is being forked for use in the new Book Brackets project:
 		http://djmcloud.danieljmckeown.com/bookbrackets/
+
+v0.6.3
+March 5, 2015
+-updated readme.md to reflect recent changes
